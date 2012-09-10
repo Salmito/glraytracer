@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 	// set up the physical window size
 	glutInitWindowSize(WIDTH, HEIGHT);
 	// set the name of the window and try to create it
-        glutCreateWindow("Raytracing656412032 CS 488 - Project 3");
+        glutCreateWindow("GL Raytracer");
 	
 	/* set up the logical graphics space */
 	init();
