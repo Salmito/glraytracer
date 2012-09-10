@@ -1,0 +1,99 @@
+######################
+# GL Raytracer       #
+# Sample Database    #
+######################
+
+#  I = Ia*Ka + Is*Kd*(N¥L) + Is*Ks*(R¥V)^n
+
+# World Lighting
+WORLD_SETTINGS
+  Background: 0.4,0.6,0.9	# Background color (r,g,b)
+  Ia: 0.8,0.8,0.8		# Ambient Light (r,g,b)
+END_WS
+
+# Light Source (White light)
+LIGHT_SOURCE
+  position: 0.5,1.0,-1.0	# position (x,y,z)
+  Is: 1.0,1.0,1.0		# Light Source (r,g,b)
+END_LS
+
+# Object - Triangle (Matte Red)
+TRIANGLE_OBJECT
+  point1: -1.0,-0.75,-1.0	# point1 (x,y,z)
+  point2: -1.0,-0.75,-3.0	# point2 (x,y,z)
+  point3: 1.0,-0.75,-1.0	# point3 (x,y,z)
+  Ka: 0.18,0.03,0.01		# Ka (r,g,b)
+  Kd: 0.82,0.20,0.10		# Kd (r,g,b)
+  Ks: 0.10,0.10,0.10		# Ks (r,g,b)
+  n: 5.0			# specular exponent
+  reflection: 0.0		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_TO
+
+# Object - Triangle (Matte Yellow)
+TRIANGLE_OBJECT
+  point1: 1.0,-0.75,-1.0	# point1 (x,y,z)
+  point2: -1.0,-0.75,-3.0	# point2 (x,y,z)
+  point3: 1.0,-0.75,-3.0	# point3 (x,y,z)
+  Ka: 0.15,0.15,0.01		# Ka (r,g,b)
+  Kd: 0.80,0.80,0.10		# Kd (r,g,b)
+  Ks: 0.10,0.10,0.10		# Ks (r,g,b)
+  n: 5.0			# specular exponent
+  reflection: 0.0		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_TO
+
+# Object - Sphere (Pewter)
+SPHERE_OBJECT
+  center: -0.8,-0.35,-2.0	# center (x,y,z)
+  radius: 0.2			# radius
+  Ka: 0.106,0.059,0.114		# Ka (r,g,b)
+  Kd: 0.427,0.470,0.541		# Kd (r,g,b)
+  Ks: 0.333,0.333,0.521		# Ks (r,g,b)
+  n: 9.8			# specular exponent
+  reflection: 0.0		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_SO
+
+# Object - Sphere (Copper)
+SPHERE_OBJECT
+  center: -0.3,-0.35,-2.0	# center (x,y,z)
+  radius: 0.2			# radius
+  Ka: 0.191,0.074,0.023		# Ka (r,g,b)
+  Kd: 0.752,0.470,0.089		# Kd (r,g,b)
+  Ks: 0.257,0.178,0.086		# Ks (r,g,b)
+  n: 12.8			# specular exponent
+  reflection: 0.15		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_SO
+
+# Object - Sphere (Silver)
+SPHERE_OBJECT
+  center: 0.2,-0.35,-2.0	# center (x,y,z)
+  radius: 0.2			# radius
+  Ka: 0.192,0.192,0.192		# Ka (r,g,b)
+  Kd: 0.508,0.508,0.508		# Kd (r,g,b)
+  Ks: 0.508,0.508,0.508		# Ks (r,g,b)
+  n: 51.2			# specular exponent
+  reflection: 0.51		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_SO
+
+# Object - Sphere (Purple Plastic)
+SPHERE_OBJECT
+  center: 0.7,-0.35,-2.0	# center (x,y,z)
+  radius: 0.2			# radius
+  Ka: 0.10,0.02,0.16		# Ka (r,g,b)
+  Kd: 0.45,0.05,0.65		# Kd (r,g,b)
+  Ks: 0.5,0.5,0.5		# Ks (r,g,b)
+  n: 31.5			# specular exponent
+  reflection: 0.0		# reflection coefficient
+  transmission: 0.0		# transmission coefficient
+  refraction_index: 1.0		# index of refraction
+END_SO
+
